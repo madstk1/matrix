@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Matrix</RootNamespace>
+
+    <Authors>Natamo</Authors>
+    <Description>Multiplatform Matrix library for C#, with arithmatic.</Description>
+    <PackageId>Matrix</PackageId>
+    <PackageProjectUrl>https://github.com/madstk1/matrix</PackageProjectUrl>
+    <PackageLicenseExpression>BSD</PackageLicenseExpression>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+</Project>
