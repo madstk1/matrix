@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace NeuralNetwork.Utils {
     public abstract class MatrixBase {
         public int rows    { get; protected set; }

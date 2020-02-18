@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace NeuralNetwork.Utils {
     public class Matrix : MatrixBase {
@@ -165,12 +164,25 @@ namespace NeuralNetwork.Utils {
         /// </summary>
         /// <returns>String representation of the matrix.</returns>
         public override string ToString() {
+            return this.ToString(-1);
+        }
+
+        /// <summary>
+        /// Represents the matrix as a string.
+        /// </summary>
+        /// <param name="digits">Round the fields down to N-digits.
+        /// <returns>String representation of the matrix.</returns>
+        public string ToString(int digits) {
             string str = "";
             for(int r = 0; r < this.rows; r++) {
                 str += "[";
 
                 for(int c = 0; c < this.columns; c++) {
-                    str += this[r, c];
+                    if(digits != -1) {
+                        str += String.Format("{0:0." + new String('0', digits) + "}", this[r, c]);
+                    } else {
+                        str += this[r, c];
+                    }
                     if(c < this.columns - 1) {
                         str += ", ";
                     }
