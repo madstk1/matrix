@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace NeuralNetwork.Utils {
     public abstract class MatrixBase {
-        protected int rows;
-        protected int columns;
+        public int rows    { get; protected set; }
+        public int columns { get; protected set; }
         protected double[,] data;
 
         public MatrixBase(int rows, int columns, double filler = 0.0) {
