@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NeuralNetwork.Matrix {
+namespace NeuralNetwork.Utils {
     public abstract class MatrixBase {
         protected int rows;
         protected int columns;

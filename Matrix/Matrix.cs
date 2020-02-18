@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NeuralNetwork.Matrix {
+namespace NeuralNetwork.Utils {
     public class Matrix : MatrixBase {
         /// <summary>
         /// Represents a row-by-column 2D transformation matrix.

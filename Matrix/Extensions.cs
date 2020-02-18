@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace NeuralNetwork.Matrix {
+namespace NeuralNetwork.Utils {
     public static class MatrixExtensions {
         public static double Multiply(this double[] x, double[] y) {
             if(x.Length != y.Length) {
